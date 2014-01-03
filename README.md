@@ -103,3 +103,7 @@ New in v2.0
 * LABjs now supports a "CacheBust" config option, which will attempt to make sure all loaded scripts are forcibly loaded new on each page refresh, by auto-appending a random number parameter to each URL. ****This is really only practical/advised for DEV environments, where you want to ensure that the code reloads every time. Doing so in production would be really bad for user performance.***** 
 * As part of LABjs' rewrite, the code style is now significantly improved in readability (most "minification" hacks have been removed), and it's also using more memory-savvy code, such as far fewer closures. As a result, LABjs should run leaner and faster, if only by a little bit. The goal is to get LABjs out of the way so your scripts load and run as fast as possible. 
 * "AppendTo", "UsePreloading", and "UseCachePreloading" options were removed as they are no longer useful. This is the only backwards-incompatible change (no actual API changes, just config), and the change should just cause older usage code to continue to operate as normal while ignoring the no longer supported options. Still, test your code carefully if you've been using either of those 3 config options before. 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/evereq/labjs.nuget/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
